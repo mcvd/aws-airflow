@@ -1,0 +1,13 @@
+# Edit
+.idea/
+
+# Infra
+.terraform/
+*.tfstate.*
+*.tfstate
+
+# CLI cheat-sheet
+cli.sh
+
+# Local env vars
+*.env
