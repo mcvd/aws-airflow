@@ -39,3 +39,13 @@ output "endpoint" {
   value       = aws_db_instance.postgresql.endpoint
   description = "Public DNS name and port separated by a colon"
 }
+
+output "alb_public_dns" {
+  description = "Goto:"
+  value = "https://${aws_alb.airflow.dns_name}"
+}
+
+output "redis_endpoint" {
+  value       = aws_elasticache_cluster.redis.cluster_address
+  description = "Public DNS name and port separated by a colon"
+}

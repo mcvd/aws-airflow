@@ -15,8 +15,7 @@ data "aws_iam_policy_document" "enhanced_monitoring" {
 
 resource "random_password" "password" {
   length = 16
-  special = true
-  override_special = "/@\" "
+  special = false
 }
 
 //resource "aws_iam_role" "enhanced_monitoring" {
